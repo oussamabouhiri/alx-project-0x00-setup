@@ -1,16 +1,9 @@
 // pages/index.tsx
 import Image from "next/image";
-import { Geist_Sans, Geist_Mono } from "next/font/google";
-
-// Import Google Fonts correctly
-const geistSans = Geist_Sans({ subsets: ["latin"], weight: "400" });
-const geistMono = Geist_Mono({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
-    >
+    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
